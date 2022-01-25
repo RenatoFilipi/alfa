@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         dm: "'DM Mono', serif",
+        pp: "'Poppins', sans-serif",
       },
     },
   },

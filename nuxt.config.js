@@ -35,6 +35,7 @@ export default {
       {
         families: {
           'DM Mono': true,
+          Poppins: true,
         },
       },
     ],
