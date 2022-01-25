@@ -1,7 +1,9 @@
 <template>
   <div>
     <side-menu />
-    <Nuxt />
+    <div class="ml-16">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
