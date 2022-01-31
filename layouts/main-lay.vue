@@ -1,7 +1,8 @@
-<template>
-  <div>
-    <side-menu />
-    <div class="ml-16">
+<template lang="html">
+  <div class="">
+    <top-menu v-if="true" />
+    <side-menu v-if="false" />
+    <div class="p-10 mt-20">
       <Nuxt />
     </div>
   </div>
@@ -9,7 +10,8 @@
 
 <script lang="ts">
 import SideMenu from '~/components/shared/side-menu.vue'
+import TopMenu from '~/components/shared/top-menu.vue'
 export default {
-  components: { SideMenu },
+  components: { SideMenu, TopMenu },
 }
 </script>

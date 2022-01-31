@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="font-pp">Hero Section</div>
+  <div class="h-screen font-pp">Hero Section</div>
 </template>
 <script>
 export default {
