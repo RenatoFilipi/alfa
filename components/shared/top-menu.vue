@@ -1,7 +1,7 @@
 <template lang="">
-  <div class="fixed flex top-0 w-screen font-pp bg-gray-50 shadow h-16">
+  <div class="fixed flex top-0 w-screen font-pp h-20 z-10 shadow bg-white">
     <nuxt-link
-      class="text-gray-800 font-dm flex items-center space-x-2 px-4"
+      class="transition ease-in-out text-gray-800 font-dm flex items-center space-x-2 px-12 hover:text-red-400"
       to="/"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,27 +20,27 @@
     >
     <nav class="flex items-center ml-20 space-x-2">
       <nuxt-link
-        class="font-pp hover:bg-gray-200 p-3 rounded-md text-gray-800"
+        class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
         to=""
         >Home</nuxt-link
       >
       <nuxt-link
-        class="font-pp hover:bg-gray-200 p-3 rounded-md text-gray-800"
+        class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
         to=""
         >Sobre</nuxt-link
       >
       <nuxt-link
-        class="font-pp hover:bg-gray-200 p-3 rounded-md text-gray-800"
+        class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
         to=""
         >Serviços</nuxt-link
       >
       <nuxt-link
-        class="font-pp hover:bg-gray-200 p-3 rounded-md text-gray-800"
+        class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
         to=""
         >Trabalhos</nuxt-link
       >
       <nuxt-link
-        class="font-pp hover:bg-gray-200 p-3 rounded-md text-gray-800"
+        class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-800"
         to=""
         >Contato</nuxt-link
       >

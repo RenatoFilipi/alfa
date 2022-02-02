@@ -2,7 +2,7 @@
   <div class="">
     <top-menu v-if="true" />
     <side-menu v-if="false" />
-    <div class="p-10 mt-16">
+    <div>
       <Nuxt />
     </div>
   </div>
