@@ -21,12 +21,12 @@
     <nav class="flex items-center ml-20 space-x-2">
       <nuxt-link
         class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
-        to=""
+        to="#inicio"
         >Home</nuxt-link
       >
       <nuxt-link
         class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600"
-        to=""
+        to="#sobre"
         >Sobre</nuxt-link
       >
       <nuxt-link
