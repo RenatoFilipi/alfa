@@ -58,10 +58,17 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'pt-BR',
     },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Custom Progress top bar: https://nuxtjs.org/docs/features/loading/
+  loading: {
+    color: 'blue',
+    height: '5px',
+    duration: 5000,
+  },
 }

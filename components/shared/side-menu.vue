@@ -3,7 +3,7 @@
     class="font-pp fixed top-0 left-0 h-screen bg-gray-50 w-52 flex-col shadow"
   >
     <nuxt-link
-      class="text-gray-800 font-dm flex items-center space-x-2 px-4 my-6"
+      class="text-gray-800 font-pp flex items-center space-x-2 px-4 my-6"
       to="/"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
