@@ -34,24 +34,24 @@
         >
         <nuxt-link
           class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to=""
+          to="#servicos"
           >Serviços</nuxt-link
         >
         <nuxt-link
           class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to=""
+          to="#trabalhos"
           >Trabalhos</nuxt-link
         >
         <nuxt-link
           class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-800 text-sm"
-          to=""
+          to="#contato"
           >Contato</nuxt-link
         >
       </nav>
     </div>
     <div class="mr-16 flex justify-center items-center">
       <nuxt-link
-        to=""
+        to="/orcamentos"
         class="transition ease-in-out border border-gray-800 flex p-4 hover:bg-gray-800 hover:text-white text-sm"
         >Orçamentos</nuxt-link
       >
