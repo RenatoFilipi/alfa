@@ -1,10 +1,10 @@
 <template lang="">
   <div
-    class="fixed flex top-0 h-20 w-screen font-pp z-10 shadow bg-white justify-between"
+    class="fixed flex top-0 h-20 w-screen font-pp z-10 shadow justify-between bg-white"
   >
     <div class="flex">
       <nuxt-link
-        class="transition ease-in-out text-gray-800 font-pp flex items-center space-x-2 px-12 hover:text-red-400"
+        class="transition ease-in-out text-gray-800 font-pp flex items-center space-x-2 px-12 hover:text-indigo-500"
         to="/"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,33 +21,15 @@
           /></svg
         ><span class="font-bold text-xl">Interiores</span></nuxt-link
       >
-      <nav class="flex items-center px-10 space-x-2">
-        <nuxt-link
-          class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to="#inicio"
-          >Home</nuxt-link
-        >
-        <nuxt-link
-          class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to="#sobre"
-          >Sobre</nuxt-link
-        >
-        <nuxt-link
-          class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to="#servicos"
-          >Serviços</nuxt-link
-        >
-        <nuxt-link
-          class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
-          to="#trabalhos"
-          >Trabalhos</nuxt-link
-        >
-        <nuxt-link
-          class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-800 text-sm"
-          to="#contato"
-          >Contato</nuxt-link
-        >
-      </nav>
+      <ul class="flex items-center px-10 space-x-2">
+        <li v-for="(nav, index) in navs" :key="index">
+          <nuxt-link
+            class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
+            :to="nav.link"
+            >{{ nav.name }}</nuxt-link
+          >
+        </li>
+      </ul>
     </div>
     <div class="mr-16 flex justify-center items-center">
       <nuxt-link
@@ -60,7 +42,20 @@
 </template>
 
 <script>
+const navs = [
+  { name: 'Home', link: '#inicio' },
+  { name: 'Sobre', link: '#sobre' },
+  { name: 'Serviços', link: '#servicos' },
+  { name: 'Trabalhos', link: '#trabalhos' },
+  { name: 'Contato', link: '#contato' },
+]
+
 export default {
   name: 'TopMenu',
+  data() {
+    return {
+      navs,
+    }
+  },
 }
 </script>
