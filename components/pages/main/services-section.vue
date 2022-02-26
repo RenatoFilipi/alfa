@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <section id="servicos" class="pt-28 pb-40 block">
     <div class="block w-full">
       <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
@@ -51,7 +51,8 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 const titleText =
   'Nós temos tudo o que você precisa para tornar seu projeto uma realidade'
 
@@ -82,7 +83,7 @@ const services = [
   },
 ]
 
-export default {
+export default Vue.extend({
   name: 'ServiceSection',
   data() {
     return {
@@ -90,5 +91,5 @@ export default {
       services,
     }
   },
-}
+})
 </script>

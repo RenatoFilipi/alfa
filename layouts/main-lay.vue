@@ -9,9 +9,11 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
+
 import SideMenu from '~/components/shared/side-menu.vue'
 import TopMenu from '~/components/shared/top-menu.vue'
-export default {
+export default Vue.extend({
   components: { SideMenu, TopMenu },
-}
+})
 </script>

@@ -1,4 +1,4 @@
-<template lang="">
+<template lang="html">
   <div
     class="fixed flex top-0 h-20 w-screen font-pp z-10 shadow justify-between bg-white"
   >
@@ -41,7 +41,8 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 const navs = [
   { name: 'Home', link: '#inicio' },
   { name: 'Sobre', link: '#sobre' },
@@ -50,12 +51,12 @@ const navs = [
   { name: 'Contato', link: '#contato' },
 ]
 
-export default {
+export default Vue.extend({
   name: 'TopMenu',
   data() {
     return {
       navs,
     }
   },
-}
+})
 </script>

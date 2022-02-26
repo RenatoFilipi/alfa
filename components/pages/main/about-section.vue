@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <section id="sobre" class="pt-48 block">
     <div class="flex-col justify-center items-center w-full py-4 space-y-3">
       <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
@@ -37,7 +37,8 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 const aboutText = `Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor at
@@ -61,7 +62,7 @@ const achievements = [
   { name: 'Clientes felizes', number: 97 },
 ]
 
-export default {
+export default Vue.extend({
   name: 'AboutSection',
   data() {
     return {
@@ -69,5 +70,5 @@ export default {
       achievements,
     }
   },
-}
+})
 </script>

@@ -1,4 +1,4 @@
-<template lang="">
+<template lang="html">
   <div
     class="font-pp fixed top-0 left-0 h-screen bg-gray-50 w-52 flex-col shadow"
   >
@@ -124,8 +124,10 @@
     </nav>
   </div>
 </template>
-<script>
-export default {
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   name: 'SideMenu',
-}
+})
 </script>
