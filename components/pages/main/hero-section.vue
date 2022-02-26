@@ -1,8 +1,5 @@
 <template lang="">
-  <section
-    id="inicio"
-    class="h-screen font-pp relative bg-gradient-to-t from-indigo-200 to-white"
-  >
+  <section id="inicio" class="h-screen font-pp relative bg-indigo-50">
     <div class="pt-80 w-4/5 my-0 mx-auto">
       <h3 class="font-pp text-gray-600 text-xl mb-4">SEJA BEM-VINDO</h3>
       <div class="font-pp flex-row space-y-6 text-gray-900">
@@ -13,12 +10,12 @@
         <button
           class="transition ease-in-out border-2 p-4 border-gray-800 font-medium font-pp hover:bg-transparent text-white hover:text-gray-800 bg-gray-800"
         >
-          COMEÇE UM PROJETO
+          SOBRE NÓS
         </button>
         <button
           class="transition ease-in-out border-2 p-4 border-gray-800 font-medium font-pp hover:bg-transparent text-white hover:text-gray-800 bg-gray-800"
         >
-          SOBRE NÓS
+          COMEÇE UM PROJETO
         </button>
       </div>
       <ul class="list-none absolute top-80 right-10 flex-row space-y-10">

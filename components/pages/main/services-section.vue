@@ -1,5 +1,5 @@
 <template>
-  <section id="servicos" class="pt-40 pb-32 block">
+  <section id="servicos" class="pt-28 pb-40 block">
     <div class="block w-full">
       <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
         O QUE FAZEMOS
