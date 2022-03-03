@@ -7,18 +7,23 @@
         class="transition ease-in-out text-gray-800 font-pp flex items-center space-x-2 px-12 hover:text-indigo-500"
         to="/"
         ><svg
-          xmlns="http://www.w3.org/2000/svg"
           class="h-8 w-8 text-indigo-500"
-          fill="none"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
+          stroke-width="2"
           stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          /></svg
+          <path stroke="none" d="M0 0h24v24H0z" />
+          <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
+          <line x1="14.5" y1="5.5" x2="18.5" y2="9.5" />
+          <polyline points="12 8 7 3 3 7 8 12" />
+          <line x1="7" y1="8" x2="5.5" y2="9.5" />
+          <polyline points="16 12 21 17 17 21 12 16" />
+          <line x1="16" y1="17" x2="14.5" y2="18.5" /></svg
         ><span class="font-bold text-xl">Ormeneze</span></nuxt-link
       >
       <ul class="flex items-center px-10 space-x-2">

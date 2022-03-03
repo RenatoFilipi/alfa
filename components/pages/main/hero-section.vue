@@ -1,5 +1,5 @@
 <template lang="html">
-  <section id="inicio" class="h-screen font-pp relative bg-indigo-200">
+  <section id="inicio" class="h-screen font-pp relative bg-indigo-50">
     <div class="pt-80 w-4/5 my-0 mx-auto">
       <h3 class="font-pp text-gray-600 text-xl mb-4">SEJA BEM-VINDO</h3>
       <div class="font-pp flex-row space-y-6 text-gray-900">
