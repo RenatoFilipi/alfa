@@ -11,18 +11,23 @@
       </h1>
       <!-- gallery of images -->
       <div class="flex justify-center my-20 max-w-6xl m-auto flex-wrap gap-8">
-        <a
+        <nuxt-link
           v-for="(image, index) in images"
           :key="index"
-          :href="image.link"
-          class="relative flex items-center justify-center m-3 overflow-hidden duration-500 transform ease-in-out w-96 h-3/4 rounded-md"
+          :to="image.link"
+          class="relative flex items-center justify-center m-3 overflow-hidden duration-500 transform ease-in-out w-96 h-3/4 rounded-md group"
         >
           <nuxt-img
-            class="transform transition-all duration-500 ease-in-out hover:scale-110 hover:blur-sm"
+            class="transform transition-all duration-500 ease-in-out hover:scale-110"
             :src="'/gallery/' + image.file"
             :alt="image.name"
           />
-        </a>
+          <div
+            class="font-pp opacity-0 group-hover:opacity-75 duration-500 absolute left-0 bottom-0 right-0 z-10 flex justify-center items-end text-xl py-4 bg-gradient-to-t from-black to-transparent text-white"
+          >
+            {{ image.name }}
+          </div>
+        </nuxt-link>
       </div>
     </div>
   </section>
@@ -36,22 +41,22 @@ const images: Array<any> = [
   {
     link: '/',
     file: 'test1.jpg',
-    name: 'project 1',
+    name: 'projeto 1',
   },
   {
     link: '/',
     file: 'test2.jpg',
-    name: 'project 2',
+    name: 'projeto 2',
   },
   {
     link: '/',
     file: 'test3.jpg',
-    name: 'project 3',
+    name: 'projeto 3',
   },
   {
     link: '/',
     file: 'test4.jpg',
-    name: 'project 4',
+    name: 'projeto 4',
   },
 ]
 
