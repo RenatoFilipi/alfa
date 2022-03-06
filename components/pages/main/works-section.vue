@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { projects } from '~/projects/index'
+import { IProject } from '~/interfaces/projects/IProjects'
 const titleText =
   'Nós amamos oque fazemos, cheque alguns dos nossos trabalhos recentes'
 
@@ -44,7 +44,7 @@ export default Vue.extend({
   data() {
     return {
       titleText,
-      projects,
+      projects: [] as IProject[],
     }
   },
 
@@ -55,7 +55,9 @@ export default Vue.extend({
   methods: {
     async fetch() {
       const response = await this.$axios.get('/api/projects')
-      console.log(response.data)
+      response.data.data.forEach((el: IProject) => {
+        this.projects.push(el)
+      })
     },
   },
 })

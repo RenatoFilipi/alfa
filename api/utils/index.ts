@@ -1,30 +1,34 @@
-import { IProject } from '~/interfaces/projects/IProjects'
+interface IProject {
+  id: number
+  name: string
+  link: string
+  file: string
+}
 
-const projects: Array<IProject> = [
+const list: Array<IProject> = [
   {
     id: 1,
     link: '/',
-    name: 'Projeto A',
+    name: 'Projeto AA',
     file: 'test1.jpg',
   },
   {
     id: 1,
     link: '/',
-    name: 'Projeto B',
+    name: 'Projeto BB',
     file: 'test2.jpg',
   },
   {
     id: 1,
     link: '/',
-    name: 'Projeto C',
+    name: 'Projeto CC',
     file: 'test3.jpg',
   },
   {
     id: 1,
     link: '/',
-    name: 'Projeto D',
+    name: 'Projeto DD',
     file: 'test4.jpg',
   },
 ]
-
-export { projects }
+export default list
