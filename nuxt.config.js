@@ -45,10 +45,15 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
     // https://image.nuxtjs.org
     '@nuxt/image',
+
+    // https://www.npmjs.com/package/@nuxtjs/dotenv
+    '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -70,10 +75,10 @@ export default {
   // Custom Progress top bar: https://nuxtjs.org/docs/features/loading/
   loading: {
     color: '#818cf8',
-    height: '5px',
+    height: '3px',
     duration: 5000,
   },
 
   // Server API: https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/
-  serverMiddleware: [{ path: '/api', handler: '~/api/index.ts' }],
+  serverMiddleware: { '/api': '~/api' },
 }

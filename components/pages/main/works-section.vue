@@ -54,7 +54,7 @@ export default Vue.extend({
 
   methods: {
     async fetch() {
-      const response = await this.$axios.get('/api/index')
+      const response = await this.$axios.get('/api/projects')
       console.log(response.data)
     },
   },
