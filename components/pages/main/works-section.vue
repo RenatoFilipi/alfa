@@ -47,5 +47,16 @@ export default Vue.extend({
       projects,
     }
   },
+
+  mounted() {
+    this.fetch()
+  },
+
+  methods: {
+    async fetch() {
+      const response = await this.$axios.get('/api/index')
+      console.log(response.data)
+    },
+  },
 })
 </script>

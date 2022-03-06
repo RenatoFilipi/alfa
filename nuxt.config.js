@@ -69,13 +69,11 @@ export default {
 
   // Custom Progress top bar: https://nuxtjs.org/docs/features/loading/
   loading: {
-    color: 'blue',
+    color: '#818cf8',
     height: '5px',
     duration: 5000,
   },
 
   // Server API: https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/
-  // serverMiddleware: {
-  //   '/api': '~/api',
-  // },
+  serverMiddleware: [{ path: '/api', handler: '~/api/index.ts' }],
 }
