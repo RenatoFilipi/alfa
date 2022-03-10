@@ -1,12 +1,12 @@
 <template lang="html">
-  <div>pagina de projeto</div>
+  <div>{{ id }}</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
   data() {
-    return {}
+    return { id: this.$route.params.id }
   },
 
   mounted() {},

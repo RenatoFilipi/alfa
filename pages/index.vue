@@ -4,6 +4,7 @@
     <about-section />
     <services-section />
     <work-section />
+    <contact-section />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HeroSection from '~/components/pages/main/hero-section.vue'
 import AboutSection from '~/components/pages/main/about-section.vue'
 import ServicesSection from '~/components/pages/main/services-section.vue'
 import WorkSection from '~/components/pages/main/works-section.vue'
+import ContactSection from '~/components/pages/main/contact-section.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -21,6 +23,7 @@ export default Vue.extend({
     AboutSection,
     ServicesSection,
     WorkSection,
+    ContactSection,
   },
   layout: 'main-lay',
 })

@@ -7,7 +7,7 @@
       <h1
         class="text-center font-pp text-5xl max-w-5xl mx-auto my-0 font-semibold leading-snug"
       >
-        {{ titleText }}
+        {{ title }}
       </h1>
       <!-- gallery of images -->
       <div class="flex justify-center my-20 max-w-6xl m-auto flex-wrap gap-8">
@@ -36,14 +36,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import { IProject } from '~/interfaces/projects/IProjects'
-const titleText =
+const title =
   'Nós amamos oque fazemos, cheque alguns dos nossos trabalhos recentes'
 
 export default Vue.extend({
   name: 'WorkSection',
   data() {
     return {
-      titleText,
+      title,
       projects: [] as IProject[],
     }
   },
