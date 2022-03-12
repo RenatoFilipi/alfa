@@ -1,10 +1,10 @@
 <template lang="html">
-  <section id="inicio" class="h-screen font-pp relative bg-indigo-50">
+  <section id="inicio" class="h-screen font-pp relative bg-indigo-100">
     <div class="pt-80 w-4/5 my-0 mx-auto">
       <h3 class="font-pp text-gray-600 text-xl mb-4">SEJA BEM-VINDO</h3>
       <div class="font-pp flex-row space-y-6 text-gray-900">
-        <h1 class="text-7xl font-bold">Resignificando espaços</h1>
-        <h1 class="text-7xl font-bold">Construindo sonhos</h1>
+        <h1 class="text-7xl font-extrabold">Resignificando espaços</h1>
+        <h1 class="text-7xl font-extrabold">Construindo sonhos</h1>
       </div>
       <div class="mt-20 flex space-x-16">
         <button

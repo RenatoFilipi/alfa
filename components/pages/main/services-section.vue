@@ -16,7 +16,7 @@
           <div
             v-for="service in services"
             :key="service.name"
-            class="relative max-w-lg"
+            class="relative max-w-lg bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-indigo-500"
           >
             <dt>
               <div

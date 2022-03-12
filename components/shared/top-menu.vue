@@ -4,7 +4,7 @@
   >
     <div class="flex">
       <nuxt-link
-        class="transition ease-in-out text-gray-800 font-pp flex items-center space-x-2 px-12 hover:text-indigo-500"
+        class="transition ease-in-out text-gray-900 font-pp flex items-center space-x-2 px-12 hover:text-indigo-500"
         to="/"
         ><svg
           class="h-8 w-8 text-indigo-500"
@@ -29,7 +29,7 @@
       <ul class="flex items-center px-10 space-x-2">
         <li v-for="(nav, index) in navs" :key="index">
           <nuxt-link
-            class="font-pp hover:bg-gray-100 p-3 rounded-md text-gray-600 text-sm"
+            class="font-pp hover:text-indigo-500 p-3 rounded-md text-gray-900 text-sm"
             :to="nav.link"
             >{{ nav.name }}</nuxt-link
           >
@@ -38,9 +38,9 @@
     </div>
     <div class="mr-16 flex justify-center items-center">
       <nuxt-link
-        to="/orcamentos"
-        class="transition ease-in-out border border-gray-800 flex p-4 hover:bg-gray-800 hover:text-white text-sm"
-        >Orçamentos</nuxt-link
+        to="/orcamento"
+        class="transition ease-in-out border border-gray-800 flex p-4 hover:bg-gray-800 hover:text-white text-sm text-black font-pp"
+        >Orçamento</nuxt-link
       >
     </div>
   </div>

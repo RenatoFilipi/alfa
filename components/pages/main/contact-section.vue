@@ -154,11 +154,14 @@
                   fill="currentColor"
                 />
               </svg>
-              Enviar
+              <span v-if="isSubmitting">Enviando...</span>
+              <span v-else>Enviar</span>
             </button>
           </div>
         </div>
-        <div class="block bg-gray-100 rounded-r-lg w-2/6 p-8">
+        <div
+          class="block border border-gray-100 rounded-r-lg w-2/6 p-8 bg-gray-100"
+        >
           <span class="font-pp text-gray-900">Informações de contato</span>
           <div class="flex flex-col mt-10 space-y-8">
             <div v-for="(item, index) in contactInfo" :key="index" class="">

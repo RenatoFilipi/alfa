@@ -17,18 +17,21 @@
       </div>
     </div>
     <div
-      class="relative flex justify-center items-center h-60 w-full bg-gray-100 mt-48 mb-12"
+      class="relative flex flex-col justify-center items-center w-full bg-indigo-800 mt-48 mb-12 py-20 space-y-12"
     >
+      <p class="font-pp text-4xl text-white font-bold">
+        Alguns marcos dos quais nos orgulhamos
+      </p>
       <ul class="h-full flex justify-center items-center space-x-40">
         <li
           v-for="achievement in achievements"
           :key="achievement.name"
           class="block font-pp"
         >
-          <p class="text-center text-5xl mb-2 text-indigo-400">
+          <p class="text-center text-5xl mb-2 text-white font-bold text">
             {{ achievement.number }}
           </p>
-          <p class="text-center text-gray-500 text-xl">
+          <p class="text-center text-gray-300 text-lg">
             {{ achievement.name }}
           </p>
         </li>
@@ -57,9 +60,9 @@ const aboutText = `Contrary to popular belief, Lorem Ipsum is not simply random 
           versions from the 1914 translation by H. Rackham.`
 
 const achievements = [
-  { name: 'Copos de café', number: 1400 },
-  { name: 'Projetos finalizados', number: 100 },
-  { name: 'Clientes felizes', number: 97 },
+  { name: 'Copos de café', number: '1400+' },
+  { name: 'Projetos finalizados', number: '100+' },
+  { name: 'Satisfação', number: '97%' },
 ]
 
 export default Vue.extend({
