@@ -39,6 +39,8 @@ export default {
         },
       },
     ],
+    // https://ngrok.nuxtjs.org/
+    '@nuxtjs/ngrok',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -81,4 +83,13 @@ export default {
 
   // Server API: https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/
   serverMiddleware: { '/api': '~/api' },
+
+  // Ngrok Congiguration: https://ngrok.nuxtjs.org/options
+  ngrok: {
+    // module options
+    authtoken: process.env.NGROK_AUTHTOKEN,
+    auth: process.env.NGROK_AUTH,
+    addr: 8080,
+    region: 'sa',
+  },
 }
