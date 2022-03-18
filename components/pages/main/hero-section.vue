@@ -1,19 +1,28 @@
 <template lang="html">
-  <section id="inicio" class="h-screen font-pp relative bg-indigo-100">
+  <section id="inicio" class="h-screen font-pp relative">
+    <!-- background -->
+    <div class="absolute top-16 left-0 right-0 -z-20">
+      <nuxt-img class="w-screen h-screen object-cover" src="/heroimage3.png" />
+    </div>
+    <!-- opacity -->
+    <div
+      class="absolute top-16 left-0 right-0 -z-10 h-screen bg-opacity-60 bg-black"
+    ></div>
+    <!-- content -->
     <div class="pt-80 w-4/5 my-0 mx-auto">
-      <h3 class="font-pp text-gray-600 text-xl mb-4">SEJA BEM-VINDO</h3>
-      <div class="font-pp flex-row space-y-6 text-gray-900">
+      <h3 class="font-pp text-gray-300 text-xl mb-4">SEJA BEM-VINDO</h3>
+      <div class="font-pp flex-row space-y-6 text-white">
         <h1 class="text-7xl font-extrabold">Resignificando espaços</h1>
         <h1 class="text-7xl font-extrabold">Construindo sonhos</h1>
       </div>
       <div class="mt-20 flex space-x-16">
         <button
-          class="transition ease-in-out border-2 p-4 border-gray-800 font-medium font-pp hover:bg-transparent text-white hover:text-gray-800 bg-gray-800"
+          class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp hover:bg-transparent text-white hover:text-white bg-ggb"
         >
           SOBRE NÓS
         </button>
         <button
-          class="transition ease-in-out border-2 p-4 border-gray-800 font-medium font-pp hover:bg-transparent text-white hover:text-gray-800 bg-gray-800"
+          class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp hover:bg-transparent text-white hover:text-white bg-ggb"
         >
           COMEÇE UM PROJETO
         </button>
@@ -23,7 +32,7 @@
           <a :href="social.link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-800 transition ease-in-out hover:text-indigo-500"
+              class="h-8 w-8 text-white transition ease-in-out hover:text-ggb"
               fill="currentColor"
               viewBox="0 0 24 24"
               stroke="currentColor"
