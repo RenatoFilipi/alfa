@@ -17,8 +17,7 @@
       </div>
     </div>
     <div
-      class="relative flex flex-col justify-center items-center w-full bg-indigo-800 mt-48 mb-12 py-20 space-y-12"
-    >
+      class="relative flex flex-col justify-center items-center w-full bg-indigo-800 mt-48 mb-12 py-20 space-y-12">
       <p class="font-pp text-4xl text-white font-bold">
         Alguns marcos dos quais nos orgulhamos
       </p>
@@ -26,8 +25,7 @@
         <li
           v-for="achievement in achievements"
           :key="achievement.name"
-          class="block font-pp"
-        >
+          class="block font-pp">
           <p class="text-center text-5xl mb-2 text-white font-bold text">
             {{ achievement.number }}
           </p>

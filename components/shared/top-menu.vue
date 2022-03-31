@@ -1,33 +1,58 @@
 <template lang="html">
-  <div
-    class="fixed flex top-0 h-16 w-screen font-pp z-20 shadow justify-between bg-white"
-  >
-    <div class="flex">
+  <nav class="flex items-center justify-between flex-wrap bg-white px-6 py-3">
+    <div class="flex items-center flex-no-shrink text-white mr-6">
       <nuxt-link
         class="transition ease-in-out text-gray-900 font-pp flex items-center space-x-2 px-12 hover:text-gg"
-        to="/"
-        ><span class="font-bold text-xl font-ail underline"
-          >ORMENEZE</span
-        ></nuxt-link
-      >
-      <ul class="flex items-center px-10 space-x-2">
-        <li v-for="(nav, index) in navs" :key="index">
-          <nuxt-link
-            class="font-pp hover:text-gg p-3 rounded-md text-gray-900 text-sm"
-            :to="nav.link"
-            >{{ nav.name }}</nuxt-link
-          >
-        </li>
-      </ul>
+        to="/">
+        <span class="font-bold text-xl font-ail underline">ORMENEZE</span>
+      </nuxt-link>
     </div>
-    <div class="mr-16 flex justify-center items-center">
-      <nuxt-link
-        to="/orcamento"
-        class="transition ease-in-out border border-gg flex p-2 hover:bg-gg hover:text-white text-sm text-black font-pp"
-        >Orçamento</nuxt-link
-      >
+    <div class="block sm:hidden">
+      <button
+        class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
+        @click="toggle">
+        <svg
+          class="fill-current h-3 w-3"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
     </div>
-  </div>
+    <div
+      :class="open ? 'block' : 'hidden'"
+      class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+      <div class="text-sm sm:flex-grow">
+        <nuxt-link
+          v-for="(nav, index) in navs"
+          :key="index"
+          class="font-pp hover:text-gg p-3 rounded-md text-blacktext-sm"
+          :to="nav.link">
+          {{ nav.name }}
+        </nuxt-link>
+      </div>
+      <div>
+        <nuxt-link
+          to="/orcamento"
+          class="transition ease-in-out border border-black flex justify-center items-center gap-2 p-4 hover:bg-gray-100">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-800"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span class="text-sm font-medium text-black font-pp">Orçamento</span>
+        </nuxt-link>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -45,7 +70,14 @@ export default Vue.extend({
   data() {
     return {
       navs,
+      open: false,
     }
+  },
+
+  methods: {
+    toggle() {
+      this.open = !this.open
+    },
   },
 })
 </script>

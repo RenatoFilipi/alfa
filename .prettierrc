@@ -1,4 +1,6 @@
 {
+  "htmlWhitespaceSensitivity": "ignore",
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "bracketSameLine": true
 }

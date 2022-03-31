@@ -5,36 +5,30 @@
         O QUE FAZEMOS
       </h3>
       <h1
-        class="text-center font-pp text-5xl max-w-5xl mx-auto my-0 font-semibold leading-snug"
-      >
+        class="text-center font-pp text-5xl max-w-5xl mx-auto my-0 font-semibold leading-snug">
         {{ titleText }}
       </h1>
       <div class="mt-28 flex justify-center">
         <dl
-          class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-24 md:gap-y-20"
-        >
+          class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-24 md:gap-y-20">
           <div
             v-for="service in services"
             :key="service.name"
-            class="relative max-w-lg bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-indigo-500"
-          >
+            class="relative max-w-lg bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-indigo-500">
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
-              >
+                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                  stroke="currentColor">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    :d="service.icon"
-                  />
+                    :d="service.icon" />
                 </svg>
               </div>
               <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
