@@ -1,22 +1,26 @@
 <template lang="html">
-  <nav class="flex items-center justify-between flex-wrap bg-white px-6 py-3">
+  <nav
+    class="w-full flex items-center justify-between flex-wrap bg-white px-6 py-3 border fixed z-20">
     <div class="flex items-center flex-no-shrink text-white mr-6">
       <nuxt-link
-        class="transition ease-in-out text-gray-900 font-pp flex items-center space-x-2 px-12 hover:text-gg"
+        class="transition ease-in-out text-gray-900 font-pp flex items-center space-x-2 lg:px-12 hover:text-gg"
         to="/">
         <span class="font-bold text-xl font-ail underline">ORMENEZE</span>
       </nuxt-link>
     </div>
     <div class="block sm:hidden">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
-        @click="toggle">
+      <button class="flex items-center px-3 py-2" @click="toggle">
         <svg
-          class="fill-current h-3 w-3"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
@@ -33,9 +37,10 @@
         </nuxt-link>
       </div>
       <div>
-        <nuxt-link
-          to="/orcamento"
-          class="transition ease-in-out border border-black flex justify-center items-center gap-2 p-4 hover:bg-gray-100">
+        <button
+          type="button"
+          class="transition ease-in-out border border-black flex justify-center items-center gap-2 p-4 hover:bg-gray-100 w-full"
+          @click="$router.push('orcamento')">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 text-gray-800"
@@ -49,7 +54,7 @@
               d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
           </svg>
           <span class="text-sm font-medium text-black font-pp">Orçamento</span>
-        </nuxt-link>
+        </button>
       </div>
     </div>
   </nav>

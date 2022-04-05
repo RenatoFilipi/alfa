@@ -1,49 +1,5 @@
 <template lang="html">
-  <section id="inicio" class="h-screen font-pp relative">
-    <!-- background -->
-    <div class="absolute top-0 left-0 right-0 -z-20">
-      <nuxt-img class="w-screen h-screen object-cover" src="/heroimage3.png" />
-    </div>
-    <!-- opacity -->
-    <div
-      class="absolute top-0 left-0 right-0 -z-10 h-screen bg-opacity-60 bg-black"></div>
-    <!-- content -->
-    <div class="pt-80 w-4/5 my-0 mx-auto">
-      <h3 class="font-pp text-gray-300 text-xl mb-4">SEJA BEM-VINDO</h3>
-      <div class="font-pp flex-row space-y-6 text-white">
-        <h1 class="text-7xl font-extrabold">Resignificando espaços</h1>
-        <h1 class="text-7xl font-extrabold">Construindo sonhos</h1>
-      </div>
-      <div class="mt-20 flex space-x-16">
-        <button
-          class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp hover:bg-transparent text-white hover:text-white bg-ggb">
-          SOBRE NÓS
-        </button>
-        <button
-          class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp hover:bg-transparent text-white hover:text-white bg-ggb">
-          COMEÇE UM PROJETO
-        </button>
-      </div>
-      <ul class="list-none absolute top-80 right-10 flex-row space-y-10">
-        <li v-for="(social, index) in socials" :key="index">
-          <a :href="social.link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-white transition ease-in-out hover:text-ggb"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="0"
-                :d="social.icon" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <section id="inicio" class="">ok</section>
 </template>
 
 <script lang="ts">
