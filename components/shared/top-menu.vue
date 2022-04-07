@@ -1,6 +1,6 @@
 <template lang="html">
   <nav
-    class="w-full flex items-center justify-between flex-wrap bg-white px-6 py-3 border fixed z-20">
+    class="w-full flex items-center justify-between flex-wrap bg-white px-6 py-3 fixed z-20 shadow-sm">
     <div class="flex items-center flex-no-shrink text-white mr-6">
       <nuxt-link
         class="transition ease-in-out text-gray-900 font-pp flex items-center space-x-2 lg:px-12 hover:text-gg"

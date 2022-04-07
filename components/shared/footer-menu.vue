@@ -10,7 +10,7 @@
         <span class="text-sm text-gray-400 font-pp font-light">Feito com</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 text-sm text-red-600 font-pp font-light"
+          class="h-5 w-5 text-sm text-gray-400 font-pp font-light"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path

@@ -1,7 +1,7 @@
 <template lang="html">
   <section id="servicos" class="pt-28 pb-40 block">
     <div class="block w-full">
-      <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
+      <h3 class="text-center text-ggb font-pp font-medium text-xl mb-2">
         O QUE FAZEMOS
       </h3>
       <h1
@@ -14,10 +14,10 @@
           <div
             v-for="service in services"
             :key="service.name"
-            class="relative max-w-lg bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-indigo-500">
+            class="relative max-w-lg bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md">
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-ggb text-white hover:bg-ggc">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"

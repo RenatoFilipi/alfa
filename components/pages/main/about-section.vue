@@ -1,11 +1,11 @@
 <template lang="html">
   <section id="sobre" class="pt-48 block">
     <div class="flex-col justify-center items-center w-full py-4 space-y-3">
-      <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
+      <h3 class="text-center text-ggb font-pp font-medium text-xl mb-2">
         QUEM SOMOS
       </h3>
-      <h1 class="font-pp text-7xl text-center">ORMENEZE</h1>
-      <h3 class="text-center text-gray-500 flex-shrink mx-4">
+      <h1 class="font-pp text-7xl text-center text-gray-700">ORMENEZE</h1>
+      <h3 class="text-center text-ggb flex-shrink mx-4">
         ARQUITETURA E INTERIORES
       </h3>
     </div>
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div
-      class="relative flex flex-col justify-center items-center w-full bg-indigo-800 mt-48 mb-12 py-20 space-y-12">
+      class="relative flex flex-col justify-center items-center w-full bg-ggc mt-48 mb-12 py-20 space-y-12">
       <p class="font-pp text-4xl text-white font-bold">
         Alguns marcos dos quais nos orgulhamos
       </p>

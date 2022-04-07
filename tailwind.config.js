@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         gg: '#76888d',
         ggb: '#768886',
+        ggc: '#6A7A78',
       },
       fontFamily: {
         dm: "'DM Mono', serif",

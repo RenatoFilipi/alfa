@@ -1,7 +1,7 @@
 <template lang="html">
   <section id="trabalhos" class="pt-28 pb-40 block">
     <div class="block w-full">
-      <h3 class="text-center text-indigo-400 font-pp font-medium text-xl mb-2">
+      <h3 class="text-center text-ggb font-pp font-medium text-xl mb-2">
         TRABALHOS RECENTES
       </h3>
       <h1
