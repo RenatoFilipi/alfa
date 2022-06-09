@@ -1,25 +1,24 @@
 <template lang="html">
   <section id="inicio" class="h-screen">
     <div class="absolute top-4 left-0 right-0">
-      <nuxt-img
+      <!-- <nuxt-img
         class="w-screen h-screen object-cover blur-sm"
-        src="/heroimage3.png" />
+        src="/heroimage5.jpg" /> -->
+      <video autoplay loop muted class="w-screen h-screen object-cover">
+        <source src="/filme.mp4" type="video/mp4" />
+      </video>
     </div>
     <div
-      class="absolute top-4 bottom-0 right-0 left-0 w-7/12 h-full bg-gray-50 flex justify-center items-center">
+      class="absolute top-4 bottom-0 right-0 left-0 w-7/12 h-full bg-transparent flex justify-center items-center">
       <div class="w-4/5 my-0 mx-auto">
-        <h3 class="font-pp text-ggb text-xl mb-4 z-30">SEJA BEM-VINDO</h3>
-        <div class="font-pp flex-row space-y-6 text-gray-900">
-          <h1 class="text-7xl font-extrabold">Resignificando espaços</h1>
-          <h1 class="text-7xl font-extrabold">Construindo sonhos</h1>
+        <!-- <h3 class="font-pp text-ggb text-xl mb-4 z-30">SEJA BEM-VINDO</h3> -->
+        <div class="font-pp flex-row space-y-6 text-white">
+          <h1 class="text-7xl font-semibold">Construindo sonhos</h1>
+          <h1 class="text-7xl font-semibold">Resignificando espaços</h1>
         </div>
-        <div class="mt-20 flex space-x-16">
+        <div class="mt-16 flex space-x-16">
           <button
-            class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp bg-ggb hover:bg-ggc text-white">
-            SOBRE NÓS
-          </button>
-          <button
-            class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp bg-ggb hover:bg-ggc text-white">
+            class="transition ease-in-out border-2 p-4 border-ggb font-medium font-pp bg-ggb hover:bg-ggc hover:border-ggc text-white">
             COMEÇE UM PROJETO
           </button>
         </div>

@@ -76,7 +76,7 @@ export default {
 
   // Custom Progress top bar: https://nuxtjs.org/docs/features/loading/
   loading: {
-    color: '#818cf8',
+    color: '#768886',
     height: '3px',
     duration: 5000,
   },
